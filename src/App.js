@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { createContext, useState } from "react";
+import Step from "./components/Step/Step";
+import Stepper from "./components/Stepper";
+export const FormContext = createContext();
 
 function App() {
+  const [activeStepIndex, setActiveStepIndex] = useState(3);
+  const [formData, setFormData] = useState({});
+  console.log('formData', formData);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <FormContext.Provider
+      value={{ activeStepIndex, setActiveStepIndex, formData, setFormData }}
+    >
+      <div className="w-screen h-screen flex flex-col items-center justify-start">
+        <Stepper />
+        <Step />
+      </div>
+    </FormContext.Provider>
   );
 }
 
