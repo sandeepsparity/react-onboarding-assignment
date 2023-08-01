@@ -4,7 +4,7 @@ import Stepper from "./components/Stepper";
 export const FormContext = createContext();
 
 function App() {
-  const [activeStepIndex, setActiveStepIndex] = useState(3);
+  const [activeStepIndex, setActiveStepIndex] = useState(0);
   const [formData, setFormData] = useState({});
   console.log('formData', formData);
   return (
