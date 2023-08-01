@@ -146,8 +146,13 @@ select {
 /* Styles for mobile devices */
 @media (max-width: 767px) {
     .stepper{
-        padding-left: 3rem; 
-        padding-right: 3rem; 
+        padding: 3rem;
+    }
+    .form-wrapper{
+        margin: 0 3rem;
+    }
+    .planning-card{
+        width: 150px;
     }
     /* Add your CSS styles for mobile devices here */
   }

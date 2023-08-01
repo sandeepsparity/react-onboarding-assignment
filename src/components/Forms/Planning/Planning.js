@@ -17,6 +17,7 @@ function Planning() {
       validationSchema={ValidationSchema}
     >
       <Form className="flex flex-col justify-center items-center">
+      <div className="form-wrapper">
         <div className="text-2xl font-medium self-center mb-2 tracking-wide">How are you planning to use Eden?</div>
         <div className="font-light self-center mb-2 text-gray-500 mb-2 tracking-normal pb-2 grayscale text-sm">We'll streamline your setup experience accordingly.</div>
         <div className="flex flex-row">
@@ -33,7 +34,7 @@ function Planning() {
               </svg>
             </div>
             <div className="font-medium text-slate-900 text-left p-1">For myself</div>
-            <p className="text-gray-700 text-base break-words overflow-hidden gray text-left text-xs">Write better. Think more clearly. Stay organized</p>
+            <p className="text-gray-700 text-base break-words overflow-hidden gray text-left text-xs p-1">Write better. Think more clearly. Stay organized</p>
           </button>
 
           <button
@@ -49,7 +50,7 @@ function Planning() {
               </svg>
             </div>
             <div className="font-medium text-slate-900 text-left p-1">With my team</div>
-            <p className="text-gray-700 text-base break-words overflow-hidden gray text-left text-xs">Wikis, docs, tasks & projects, all in one place</p>
+            <p className="text-gray-700 text-base break-words overflow-hidden gray text-left text-xs p-1">Wikis, docs, tasks & projects, all in one place</p>
           </button>
         </div>
         <button
@@ -58,6 +59,7 @@ function Planning() {
           onClick={()=> setActiveStepIndex(activeStepIndex + 1)}>
           Continue
         </button>
+        </div>
       </Form>
     </Formik>
   );

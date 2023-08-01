@@ -5,22 +5,23 @@ import completedGif from "./../../../completed.gif";
 function Success() {
   const { formData } = useContext(FormContext);
   const { displayName } = formData;
-  let name = `${displayName?.charAt(0)?.toUpperCase()} ${displayName?.slice(1)}}`;
+
   
-  const congratsMessage = !name 
-  ? `Congratulations, ${name}!` 
+  const congratsMessage = displayName 
+  ? `Congratulations, ${displayName}!` 
   : "Congratulations!";
   
-  const onBoardingMessage = !name
-  ? `You have completed onboarding, you can start using ${name}!`
+  const onBoardingMessage = displayName
+  ? `You have completed onboarding, you can start using ${displayName}!`
   : "You have completed onboarding, you can start using now!";
 
-  const launchMessage = !name? `Launch ${name}`: "Launch";
+  const launchMessage = displayName? `Launch ${displayName}`: "Launch";
 
   return (
     <div className="flex flex-col justify-center items-center">
     <img src={completedGif} alt='completed' width="35px" height="35px"/>
-    <div className="text-2xl font-medium self-center mb-2 tracking-wide pt-4">
+    <div className="form-wrapper">
+    <div className="text-2xl font-medium self-center mb-2 tracking-wide pt-4 text-center">
         {congratsMessage}
     </div>
         <div className="font-light self-center mb-2 text-gray-500 mb-2 tracking-normal pb-2 grayscale text-base">
@@ -32,6 +33,7 @@ function Success() {
     >
       {launchMessage}
     </button>
+    </div>
   </div>
   );
 }
