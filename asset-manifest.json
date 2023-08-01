@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-onboarding-assignment/static/css/main.fb5f9369.css",
-    "main.js": "/react-onboarding-assignment/static/js/main.7b262d6f.js",
+    "main.css": "/react-onboarding-assignment/static/css/main.c24d4a56.css",
+    "main.js": "/react-onboarding-assignment/static/js/main.89a1a090.js",
     "static/js/787.8bd0aa3c.chunk.js": "/react-onboarding-assignment/static/js/787.8bd0aa3c.chunk.js",
     "static/media/completed.gif": "/react-onboarding-assignment/static/media/completed.5c4d5ccd7c626402e2c8.gif",
     "index.html": "/react-onboarding-assignment/index.html",
-    "main.fb5f9369.css.map": "/react-onboarding-assignment/static/css/main.fb5f9369.css.map",
-    "main.7b262d6f.js.map": "/react-onboarding-assignment/static/js/main.7b262d6f.js.map",
+    "main.c24d4a56.css.map": "/react-onboarding-assignment/static/css/main.c24d4a56.css.map",
+    "main.89a1a090.js.map": "/react-onboarding-assignment/static/js/main.89a1a090.js.map",
     "787.8bd0aa3c.chunk.js.map": "/react-onboarding-assignment/static/js/787.8bd0aa3c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb5f9369.css",
-    "static/js/main.7b262d6f.js"
+    "static/css/main.c24d4a56.css",
+    "static/js/main.89a1a090.js"
   ]
 }
