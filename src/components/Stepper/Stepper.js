@@ -15,7 +15,7 @@ function Stepper() {
     });
   }, [activeStepIndex]);
   return (
-    <div className="w-2/3 flex flex-row items-center justify-center px-64 py-16">
+    <div className="w-2/3 flex flex-row items-center justify-center py-16 stepper">
       <div className="stepper-item w-8 h-8 text-center px-1 py-1 text-sm border-2 rounded-full">
         1
       </div>

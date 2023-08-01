@@ -33,7 +33,7 @@ function Workspace() {
         setActiveStepIndex(activeStepIndex + 1);
       }}
     >
-      <Form className="flex flex-col justify-center items-center">
+      <Form className="flex flex-col justify-center items-center form-center">
         <div className="text-2xl font-medium self-center mb-2 tracking-wide">Let's set up a home for all your work</div>
         <div className="font-light self-center mb-2 text-gray-500 mb-2 tracking-normal pb-2 grayscale text-sm">You can always create another workspace later.</div>
         <div className="flex flex-col w-full mb-2">
@@ -58,7 +58,7 @@ function Workspace() {
         </div>
         <ErrorMessage name="workspaceURL" render={renderError} />
         <button
-          className="text-xs rounded-md w-full btn-bg-color font-light text-white my-2 p-2"
+          className="font-light text-xs rounded-md w-full btn-bg-color font-medium text-white my-2 p-2"
           type="submit"
         >
           Create Workspace
